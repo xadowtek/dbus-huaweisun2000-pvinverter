@@ -1,6 +1,8 @@
 # dbus-huaweisun2000-pvinverter
 
-dbus driver for victron cerbo gx / venus os for huawei sun 2000 inverter
+Modified version of dbus driver for Huawei Sun2000 of kcbam https://github.com/kcbam/dbus-huaweisun2000-pvinverter.
+All credits goes to him and to Olivergregorius https://github.com/olivergregorius/sun2000_modbus.
+
 
 ## Purpose
 
@@ -13,18 +15,6 @@ which is actually intended for configuration with the Huawei app (Fusion App or 
 additional hardware needs to be purchased and the inverter does not need to be connected to the Internet.
 
 To further use the data, the mqtt broker from Venus OS can be used.
-
-## Todo
-
-- [ ] better logging
-- [x] find out why the most values are missing in the view
-- [x] repair modelname (custom name in config)
-- [x] possibility to change settings via gui
-- [ ] alarm, state
-- [ ] more values: temperature, efficiency
-- [ ] clean code
-
-Cooming soon
 
 ## Installation
 
@@ -55,9 +45,6 @@ Cooming soon
 6. Run install.sh
 
    `sh /data/dbus-huaweisun2000-pvinverter/install.sh`
-
-## GUI
-You can find the settings in the Remote Console under 'settings -> pv inverter -> Huawei...'
 
 ### Debugging
 
@@ -104,21 +91,15 @@ sh /data/dbus-huaweisun2000-pvinverter/uninstall.sh
 rm -r /data/dbus-huaweisun2000-pvinverter/
    ```
 
-# Examples
+## CREDITS
 
-![VRM-01](img/VRM-01.png)
+kcbam 			https://github.com/kcbam/dbus-huaweisun2000-pvinverter
+Olivergregorius	https://github.com/olivergregorius/sun2000_modbus
 
-![VRM-02](img/VRM-02.png)
+Thanks to kcbam for developing dbus driver for Huawei Sun2000.
+Thanks to Olivergregorius for developing the python modbus library for Huawei Sun2000.
+Thanks to both for share code with the comunity!
 
-
-# Thank you
-## Contributers
-
-DenkBrettl
-
-## Used libraries
-
-modified verion of https://github.com/olivergregorius/sun2000_modbus
 
 ## this project is inspired by
 
